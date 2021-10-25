@@ -36,6 +36,7 @@ class UsernamePage extends StatefulWidget {
 }
 
 class _UsernamePageState extends State<UsernamePage> {
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,9 +68,7 @@ class _UsernamePageState extends State<UsernamePage> {
             const Text(
               'Please enter your username',
             ),
-            Text(
-              'this should be a form'
-            ),
+            usernameForm(),
           ],
         ),
       ),
@@ -80,6 +79,16 @@ class _UsernamePageState extends State<UsernamePage> {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
+
+  Form usernameForm() {
+    return Form(
+      key: _formKey,
+      child: Column(
+        children: <Widget>[],
+      )
+    );
+  }
+
   bool _test() {
     print("button pressed\n\n");
     return true;
