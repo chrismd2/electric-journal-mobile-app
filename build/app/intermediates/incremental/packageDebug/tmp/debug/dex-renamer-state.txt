@@ -1,0 +1,4 @@
+#Mon Oct 25 12:52:14 EDT 2021
+base.0=/home/chris/code/electric-journal-mobile-app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
